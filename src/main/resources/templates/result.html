@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Your link is smlr now!</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          crossorigin="anonymous" />
+</head>
+<body>
+    <div class="text-center">
+        <div class="page-header">
+            <hl> XXX</hl>
+        </div>
+        <p>YYY <a th:href="${link}" th:text="${link}"></a></p>
+        <p> YYY <a th:href="${keyed}" th:text="${keyed}"></a></p>
+        <div class="imput-group">
+            <span class="imput-group-addon" id="basic-addon1"> ZZZZ</span>
+            <input th:autofocus="${true}" type="text" class="form-control" readonly="readonly" aria-describedby="basic-addon1" th:value="${keyed}" />
+        </div>
+    </div>
+</body>
+</html>
